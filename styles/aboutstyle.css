@@ -7,7 +7,6 @@ body {
 nav{
     display: flex;
     justify-content: center;
-    gap: 1rem;
     background: white;
     padding: 0.5rem;
     height: 5%;
@@ -27,7 +26,13 @@ nav a{
     margin: 80px auto;
     padding: 20px;
 }
-
+section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: solid 2px #ccc;
+    background-color: #ffc400;
+}
 .image-section img {
     max-width: 350px;
     border-radius: 12px;
@@ -48,17 +53,12 @@ nav a{
     margin-bottom: 15px;
     color: #ffffff;
 }
-.highlight {
-    text-decoration: underline;
-    text-decoration-color: #b36ef3;
+.video-section {
+    display: flex;
+    justify-content: space-evenly;
 }
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-    .video-section video {
-        max-width: 250px;
-    }
+.video-section video {
+    height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
